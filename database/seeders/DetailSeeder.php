@@ -22,7 +22,7 @@ class DetailSeeder extends Seeder
                 "post_id" => $i+1,
                 "author" => $faker->name(),
                 "date" =>  $faker->date(),
-                "body" => $faker->paragraph()
+                "body" => $faker->paragraph(30)
             ]);
 
         }

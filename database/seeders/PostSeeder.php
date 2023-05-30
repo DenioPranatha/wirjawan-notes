@@ -7,6 +7,7 @@ use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+
 class PostSeeder extends Seeder
 {
     /**
@@ -23,7 +24,8 @@ class PostSeeder extends Seeder
                 "description" =>  $faker->sentence(),
                 "time_category_id" => mt_rand(1,3),
                 "like" => mt_rand(0, 200),
-                "latest_review" => $faker->dateTime()
+                "latest_review" => $faker->dateTime(),
+                "imgURL" => "wide.jpg",
             ]);
 
         }

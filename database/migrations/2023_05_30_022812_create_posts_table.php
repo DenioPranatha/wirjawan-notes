@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('like');
             $table->dateTime('latest_review');
             $table->timestamps();
+            $table->string('imgURL');
         });
     }
 
